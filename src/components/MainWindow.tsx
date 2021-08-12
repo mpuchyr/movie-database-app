@@ -8,18 +8,30 @@ const MainWindow = () => {
     const [error, setError] = useState<string | null>(null)
     const [date, setDate] = useState(moment().format("YYYY-MM-DD"))
 
-    const token = "203505d9985d3a84ee017420d7ddd358"
 
-    useEffect(() => {
-      try {
-        fetch(`https://api.themoviedb.org/3/movie/550?api_key=${token}`)
-        .then(res => res.json())
-        .then(data => console.log(data))
-      } catch {
-        setError('Something went wrong, please try again later')
-      }
-      setLoading(false)
-    }, [])
+    // const token = "203505d9985d3a84ee017420d7ddd358"
+    // const configuration = dotenv.config()
+
+    // if (configuration.error) {
+    //   throw configuration.error
+    // }
+  
+    // console.log(configuration.parsed)
+    
+    // const token = 
+    // console.log(token)
+
+
+    // useEffect(() => {
+    //   try {
+    //     fetch(`https://api.themoviedb.org/3/movie/550?api_key=${token}`)
+    //     .then(res => res.json())
+    //     .then(data => console.log(data))
+    //   } catch {
+    //     setError('Something went wrong, please try again later')
+    //   }
+    //   setLoading(false)
+    // }, [])
 
     return (
         <div>

@@ -1,13 +1,17 @@
 import React from 'react';
-import * as dotenv from 'dotenv';
+
 import MainWindow from './components/MainWindow';
+import Searchbar from './components/Searchbar';
+import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
 
 function App() {
-
   return (
     <div className="App">
-      Hello world
+      <Searchbar />
       <MainWindow />
+      <Sidebar />
+      <Footer />
     </div>
   );
 }
